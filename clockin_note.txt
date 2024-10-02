@@ -54,7 +54,7 @@ path('admin/', admin.site.urls),
 
     # Home API
     path('dashboard/clock-in/', home, name='home'),
-]
+
 
 
 
