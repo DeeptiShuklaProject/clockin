@@ -1,34 +1,3 @@
-# from rest_framework import serializers
-# from .models import User, Role, Company, Entity, EntityRolePermission
-
-# class RoleSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Role
-#         fields = ['id', 'name']
-
-# class UserSerializer(serializers.ModelSerializer):
-#     # Use RoleSerializer to properly handle the ManyToManyField
-#     roles = RoleSerializer(many=True, read_only=True)
-
-#     class Meta:
-#         model = User
-#         fields = ['id', 'first_name', 'last_name', 'username', 'email', 'roles']
-
-# class CompanySerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Company
-#         fields = ['id', 'name', 'code', 'address', 'contact_number', 'contact_email']
-
-# class EntitySerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Entity
-#         fields = ['id', 'entity_label', 'url', 'dashboard_url']
-
-# class EntityRolePermissionSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = EntityRolePermission
-#         fields = ['role', 'entity', 'can_create', 'can_read', 'can_update', 'can_delete']
-
 
 from rest_framework import serializers
 from django.contrib.auth import get_user_model

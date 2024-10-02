@@ -3,11 +3,9 @@ python -m venv venv
 venv\Scripts\activate
 
 1. python manage.py startapp service
-("service" is model name)
 
-2. Company, Role, User, Entity, EntityRolePermission
 
-python .\manage.py import_json
+python .\manage.py import_json(optional)
 
 python manage.py makemigrations
 python manage.py migrate

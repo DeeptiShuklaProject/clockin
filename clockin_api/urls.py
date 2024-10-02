@@ -17,35 +17,6 @@ Including another URLconf
 
 
 
-
-
-# from django.contrib import admin
-# from django.urls import path
-# from service.views import (  # Make sure to import from service.views
-#     user_list,
-#     get_user,
-#     create_role,
-#     create_company,
-#     create_entity,
-#     assign_role_to_user,
-#     grant_entity_permissions,
-# )
-# from clockin_api import views  # If you have other views in clockin_api
-
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-#     path('', views.homePage),  # Ensure these functions are defined in clockin_api.views
-#     path('Home/', views.home),
-#     path('ClockinDetails/', views.ClockinDetails),
-#     path('users/', user_list, name='user_list'),  # Updated to user_list
-#     path('users/<int:user_id>/', get_user, name='get_user'),  # To get a user by ID
-#     path('roles/', create_role, name='create_role'),  # To create a role
-#     path('companies/', create_company, name='create_company'),  # To create a company
-#     path('entities/', create_entity, name='create_entity'),  # To create an entity
-#     path('users/<int:user_id>/roles/<int:role_id>/', assign_role_to_user, name='assign_role_to_user'),  # Assign role to user
-#     path('roles/<int:role_id>/entities/<int:entity_id>/permissions/', grant_entity_permissions, name='grant_entity_permissions'),  # Grant permissions
-# ]
-
 from django.urls import path
 from django.contrib import admin
 from django.urls import path

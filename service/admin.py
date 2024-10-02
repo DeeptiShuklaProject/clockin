@@ -1,42 +1,4 @@
 
-
-# # Register your models here.
-
-
-
-
-# from django.contrib import admin
-# from .models import User, Role, Company, Entity, EntityRolePermission
-
-# @admin.register(User)
-# class UserAdmin(admin.ModelAdmin):
-#     list_display = ('username', 'email', 'is_active', 'is_email_verified', 'is_staff')
-#     list_filter = ('is_active', 'is_staff')
-#     search_fields = ('username', 'email')
-
-# @admin.register(Role)
-# class RoleAdmin(admin.ModelAdmin):
-#     list_display = ('name',)
-#     search_fields = ('name',)
-
-# @admin.register(Company)
-# class CompanyAdmin(admin.ModelAdmin):
-#     list_display = ('name', 'code', 'contact_number', 'contact_email')
-#     search_fields = ('name', 'code')
-
-# @admin.register(Entity)
-# class EntityAdmin(admin.ModelAdmin):
-#     list_display = ('entity_label', 'url', 'dashboard_url')
-#     search_fields = ('entity_label',)
-
-# @admin.register(EntityRolePermission)
-# class EntityRolePermissionAdmin(admin.ModelAdmin):
-#     list_display = ('role', 'entity', 'can_create', 'can_read', 'can_update', 'can_delete')  # Updated field names
-#     list_filter = ('role', 'entity')
-#     search_fields = ('role__name', 'entity__entity_label')
-
-
-
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from .models import (
