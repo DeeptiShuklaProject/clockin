@@ -10,72 +10,11 @@ python .\manage.py import_json(optional)
 python manage.py makemigrations
 python manage.py migrate
 
-python manage.py runserver
+(venv) D:\clockin_api\clockin_api>python manage.py runserver
 
 http://127.0.0.1:8000/
 
-
-
-
-a Postman collection for a project related to user authentication, including endpoints for login, password resets, and user registration. Here's a high-level overview of the endpoints based on the file:
-Login with OTP (/noauth/api/login-via-email/):
-Login with Password (/noauth/api/login-via-email/password/):
-Password Reset (/noauth/api/reset/password/email/):
-Change Password (/noauth/api/reset/password/email/otp/):
-User Verification via OTP (/noauth/api/verify-otp/):
-Token Refresh (/api/refresh-token/):
-
-under the Admin Menu based on the CLOCKIN.postman_collection.json file:
-User Registration(/auth/user/registration/)
-Roles( /api/roles/)
-Role to User Mapping(/api/role-to-user-mapping/)
-Entity(/api/entity/)
-Entity Role Permissions(/api/entity-role-permissions/)
-Company(/api/company/)
-Projects(api/projects/)
-User Projects(/api/user-projects/)
-Personal Information(/api/personal-information/)
-Address History(/api/address-history/)
-Education(/api/education/)
-Employment History
-
-URL: /api/employment-history/
-Past References
-
-URL: /api/past-references/
-Users Personal Information
-
-URL: /api/users/personal-information/
-
-Users Address History
-URL: /api/users/address-history/
-
-Users Past References
-URL: /api/users/past-references/
-
-Users Education
-URL: /api/users/education/
-
-Users Employment History
-URL: /api/users/employment-history/
-
-Clock In Configuration
-URL: /api/clockin-configuration/
-
-Clock In Monthly
-URL: /api/clockin-monthly/
-
-Clock In Weekly
-URL: /api/clockin-weekly/
-
-Clock In Configuration (Dashboard)( /dashboard/clock-in/)
-
-Home( /api/home/)
-
-
-http://127.0.0.1:8000/noauth/api/login-via-email/
-
-all 30 api in 
+all APIs in 
 D:\clockin_api\clockin_api\clockin_api\urls.py
 
 path('admin/', admin.site.urls),
